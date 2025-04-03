@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+    <style>
+          .company-img img {
+            height: 70vh;
+            width: 50vw;
+        }
+    
+        @media (max-width: 750px) {
+            .company-img img {
+                width: 90vw;
+            }
+        }
+    
+        .dropdown {
+            position: relative;
+        }
+    
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            list-style: none;
+    
+            margin: 0;
+    
+        }
+    
+    
+        .dropdown-menu li a {
+            text-decoration: none;
+            color: black;
+            /* display: block; */
+        }
+    
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    
+        .navbar-menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+    
+        .navbar-menu li {
+            padding: 10px 15px;
+            position: relative;
+        }
+    
+        .sub-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            display: none;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        .has-sub:hover .sub-menu {
+            display: block;
+        }
+        .comming {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .title {
+            font-size: 3rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-style-two">
+		<div class="header-wrapper">
+			<!-- Top Bar -->
+			<div class="header-top-area bg-gradient-reverse-color d-none d-lg-block">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<span class="address p-3"><i class="fas fa-map-marker-alt"></i> 113 Health Street, Delhi City, 221113</span>
+							<span class="phone"><i class="fas fa-envelope"></i> <a href="mailto:support@hexapreventia.com">support@hexapreventia.com</a></span>
+						</div>
+						<div class="col-lg-6 text-lg-end">
+							<ul class="social-links list-inline mb-0">
+								<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Navigation Bar -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="Hexa Preventia" style="width: 300px;">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+									<li><a class="dropdown-item" href="about.html">About Hexapreventia</a></li>
+									<li><a class="dropdown-item" href="team.html">Our Team</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+								<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+									<li><a class="dropdown-item" href="service.html">Our Services</a></li>
+									<li><a class="dropdown-item" href="healthinsurance.html">Health Insurance Packages</a></li>
+									<li><a class="dropdown-item" href="grouphealth.html">Group Health Insurance</a></li>
+									<li><a class="dropdown-item" href="nutraceuticals.html">Nutraceuticals and Supplement</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="client.html">Existing Clients</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+							<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+							<li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+    <div class="comming">
+        <h1 class="title">Coming Soon</h1>  
+    </div>
+  
+</body>
+</html>
