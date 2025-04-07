@@ -3,85 +3,159 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="HEXA PREVENTIA">
+	<meta name="author" content="Insuren">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="HEXA PREVENTIA">
-	<meta name="keywords" content="HEXA PREVENTIA" />
-	<title>HEXA PREVENTIA</title>
+	<meta name="description" content="Insuren Corporate Consulting HTML5 Template">
+	<meta name="keywords"
+		content="insurance, agency, business, consulting, corporate, finance, digital, marketing, multipurpose" />
+	<title>Insuren || Insurance Agency HTML Template</title>
 	<link href="images/favicon.png" rel="shortcut icon" type="image/png">
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
 <style>
-	.company-img img {
-		height: 70vh;
-		width: 50vw;
+	.hero-banners {
+		background-image: url('images/bg/banner1.jpeg');
+		background-size: cover;
+		background-position: center;
+		height: 50vh;
+		position: relative;
+		
+
 	}
 
-	@media (max-width: 750px) {
-		.company-img img {
-			width: 90vw;
+	.hero-banner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.banner-content {
+		color: #fff;
+		text-align: center;
+		max-width: 800px;
+	}
+
+	.banner-title {
+		font-size: 2rem;
+		font-weight: bold;
+		color: white;
+		margin-bottom: 0.5rem;
+	}
+
+	.banner-text {
+		font-size: 1rem;
+		margin: 1rem 0;
+	}
+
+	.btn-box .cs-btn-one {
+		padding: 0.75rem 1.5rem;
+		font-size: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		.banner-title {
+			font-size: 1.5rem;
+		}
+
+		.banner-text {
+			font-size: 0.9rem;
 		}
 	}
 
-	.dropdown {
-		position: relative;
+	@media (max-width: 480px) {
+		.hero-banner {
+			height: auto;
+			padding: 2rem 0;
+		}
+
+		.banner-title {
+			font-size: 1.25rem;
+		}
+
+		.banner-text {
+			font-size: 0.85rem;
+		}
+
+		.btn-box .cs-btn-one {
+			width: 100%;
+		}
 	}
 
-	.dropdown-menu {
-		display: none;
-		position: absolute;
-		background: white;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		list-style: none;
-
-		margin: 0;
-
-	}
-
-
-	.dropdown-menu li a {
-		text-decoration: none;
-		color: black;
-		/* display: block; */
-	}
-
-	.dropdown:hover .dropdown-menu {
-		display: block;
-	}
-
-	.navbar-menu {
-		margin: 0;
-		padding: 0;
-		list-style: none;
+	/* blog */
+	.news-wrapper {
+		height: 100%;
 		display: flex;
-		gap: 15px;
+		flex-direction: column;
 	}
 
-	.navbar-menu li {
-		padding: 10px 15px;
-		position: relative;
+	.row.align-items-stretch>[class*="col-"] {
+		display: flex;
 	}
 
-	.sub-menu {
-		position: absolute;
-		top: 100%;
-		left: 0;
+	.news-details {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.news-thumb img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	/* service */
+	.service-style4 {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 		background: #fff;
-		display: none;
-		padding: 10px 0;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		border: 1px solid #eee;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 	}
 
-	.has-sub:hover .sub-menu {
-		display: block;
+	.service-item-thumb {
+		height: 200px;
+		/* Fixed image height */
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.service-item-thumb img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.service-item-content {
+		padding: 20px;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.service-item-title {
+		font-size: 18px;
+		margin-bottom: 15px;
+		line-height: 1.4;
+	}
+
+	.service-item-link {
+		margin-top: auto;
 	}
 </style>
 
 <body>
-
 	<!-- Preloader Start -->
 	<section>
 		<div id="preloader">
@@ -102,8 +176,6 @@
 							<span data-text-preloader="A" class="letters-loading">
 								A
 							</span>
-
-
 					</div>
 				</div>
 				<div class="loader-section section-left"></div>
@@ -115,71 +187,146 @@
 	<!-- header Start -->
 	<header class="header-style-two">
 		<div class="header-wrapper">
-			<!-- Top Bar -->
 			<div class="header-top-area bg-gradient-reverse-color d-none d-lg-block">
 				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-6">
-							<span class="address p-3"><i class="fas fa-map-marker-alt"></i> 113 Health Street, Delhi City, 221113</span>
-							<span class="phone"><i class="fas fa-envelope"></i> <a href="mailto:support@hexapreventia.com">support@hexapreventia.com</a></span>
+					<div class="row">
+						<div class="col-lg-6 header-top-left-part">
+							<span class="address"><i class="webexflaticon flaticon-placeholder-1"></i> 113 Health
+								Street, Delhi City, 221113
+							</span>
+							<span class="phone"><i class="webexflaticon flaticon-send"></i><a
+									href="mailto:example@gmail.com">support@hexapreventia.com</a></span>
 						</div>
-						<div class="col-lg-6 text-lg-end">
-							<ul class="social-links list-inline mb-0">
-								<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-								<li class="list-inline-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						<div class="col-lg-6 header-top-right-part text-end">
+							<ul class="social-links">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
 							</ul>
+
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<!-- Navigation Bar -->
-			<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+			<div class="header-navigation-area two-layers-header">
 				<div class="container">
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.png" alt="Hexa Preventia" style="width: 300px;">
-					</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav ms-auto">
-							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-									<li><a class="dropdown-item" href="about.html">About Hexapreventia</a></li>
-									<li><a class="dropdown-item" href="team.html">Our Team</a></li>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="index.html">
+								<img id="logo-image" class="img-center" src="images/logo.png" alt="" style="width: 320px;">
+							</a>
+							<div class="mobile-menu-right"></div>
+							<div class="header-searchbox-style-two d-none d-xl-block">
+								<div class="side-panel side-panel-trigger text-end d-none d-lg-block">
+									<span class="bar1"></span>
+									<span class="bar2"></span>
+									<span class="bar3"></span>
+								</div>
+								<div class="show-searchbox">
+									<a href="#"><i class="webex-icon-Search"></i></a>
+								</div>
+								<div class="toggle-searchbox">
+									<form action="#" id="searchform-all" method="get">
+										<div>
+											<input type="text" id="s" class="form-control" placeholder="Search...">
+											<div class="input-box">
+												<input type="submit" value="" id="searchsubmit"><i
+													class="fas fa-search"></i>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="side-panel-content">
+								<div class="close-icon">
+									<button><i class="webex-icon-cross"></i></button>
+								</div>
+								<div class="side-panel-logo mrb-30">
+									<a href="index.html">
+										<img src="images/logo-sidebar-dark.png" alt="" />
+									</a>
+								</div>
+								<div class="side-info mrb-30">
+									<div class="side-panel-element mrb-25">
+										<h4 class="mrb-10">Office Address</h4>
+										<ul class="list-items">
+											<li><span class="fa fa-map-marker-alt mrr-10 text-primary-color"></span>113
+												Health Street, Delhi City, 221113</li>
+											<li><span class="fas fa-envelope mrr-10 text-primary-color"></span><a
+													href="mailto:example@gmail.com">support@hexapreventia.com</a></li>
+											<li><span class="fas fa-phone-alt mrr-10 text-primary-color"></span><a
+													href="tel:5551234567">(+91) 9876-5432-10</a></li>
+										</ul>
+									</div>
+									<div class="side-panel-element mrb-30">
+										<h4 class="mrb-15">Pintarest</h4>
+										<ul class="pintarest-list">
+											<li><a href="#"><img class="img-full" src="images/side-panel/1.jpg"
+														alt=""></a></li>
+											<li><a href="#"><img class="img-full" src="images/side-panel/2.jpg"
+														alt=""></a></li>
+											<li><a href="#"><img class="img-full" src="images/side-panel/3.jpg"
+														alt=""></a></li>
+											<li><a href="#"><img class="img-full" src="images/side-panel/4.jpg"
+														alt=""></a></li>
+											<li><a href="#"><img class="img-full" src="images/side-panel/5.jpg"
+														alt=""></a></li>
+											<li><a href="#"><img class="img-full" src="images/side-panel/6.jpg"
+														alt=""></a></li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="mrb-15">Social List</h4>
+								<ul class="social-list">
+									<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
 								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-								<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-									<li><a class="dropdown-item" href="service.html">Our Services</a></li>
-									<li><a class="dropdown-item" href="healthinsurance.html">Health Insurance Packages</a></li>
-									<li><a class="dropdown-item" href="grouphealth.html">Group Health Insurance</a></li>
-									<li><a class="dropdown-item" href="nutraceuticals.html">Nutraceuticals and Supplement</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="client.html">Existing Clients</a></li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-							<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-							<li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
-						</ul>
+							</div>
+							<div class="main-menu f-right">
+								<nav id="mobile-menu-right">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li class="has-sub">
+											<a href="#">About</a>
+											<ul class="sub-menu">
+												<li><a href="about.html">About Us</a></li>
+												<li><a href="teams.html">Our Team</a></li>
+											</ul>
+										</li>
+
+										<li class="has-sub">
+											<a href="#">Service</a>
+											<ul class="sub-menu">
+												<li><a href="service.html">Our Services</a></li>
+												<li><a href="healthinsurance.html">Health
+														Insurance Packages</a></li>
+												<li><a href="grouphealth.html">Group Health
+														Insurance</a></li>
+												<li><a href="nutraceuticals.html">Nutraceuticals
+														and Supplement</a></li>
+											</ul>
+										</li>
+
+										<li><a class="nav-link" href="client.html">Existing Clients</a>
+										</li>
+										<li><a href="contact.html">Contact Us</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="register.html">Register</a></li>
+									</ul>
+									</ul>
+								</nav>
+							</div>
+						</div>
 					</div>
 				</div>
-			</nav>
+			</div>
 		</div>
 	</header>
-	
-	<!-- Bootstrap 5 JS -->
-
-	
-
 	<!-- header End -->
-	<!-- Home Slider Start -->
+	<!-- Home Banner Start -->
 	<section class="home_banner_02 ">
 		<div style="width: 100%; height: 75vh;">
 			<img src="images/banner2.png" alt="" srcset="" class="w-100 h-100">
@@ -199,188 +346,177 @@
 			}
 		}
 	</style>
-	<!-- Home Slider End -->
-	<!-- Features Section Start -->
-	<section class="pdt-110 pdb-100 bg-no-repeat bg-cover bg-pos-ct anim-object"
-		data-background="images/bg/abs-bg7.png">
+	<!-- Home Banner End -->
+	 <!-- Service Secton Start -->
+
+	<section class="service-content-area bg-silver pdt-110 " data-background="images/bg/abs-bg8.png">
 		<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
 			<div class="container">
-				<div class="row justify-content-center">
+				<div class="row">
+					<div class="col"></div>
 					<div class="col-lg-8 col-xl-6">
 						<div class="title-box-center">
-							<h2 class="title ">Hexa Preventia Services</h2>
+							<h5 class="sub-title sub-title-primary-color text-primary-color mrb-20">Services</h5>
+							<h2>We Provide Services</h2>
 						</div>
-
 					</div>
+					<div class="col"></div>
 				</div>
-			</div>
-		</div>
-
-		<style>
-			.team-block {
-				background: #fff;
-				border-radius: 15px;
-				/* Rounded corners */
-				overflow: hidden;
-				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-				display: flex;
-				flex-direction: column;
-				height: 100%;
-			}
-
-			.team-upper-part img {
-				width: 100%;
-				height: 200px;
-				object-fit: cover;
-				border-top-left-radius: 15px;
-				border-top-right-radius: 15px;
-			}
-
-			.team-bottom-part {
-				padding: 20px;
-				text-align: center;
-			}
-		</style>
-		<div class="section-content">
-			<div class="container">
-				<div class="row d-flex flex-nowrap justify-content-center overflow-auto">
-					<div class="col-12 col-sm-auto p-2">
-						<div class="team-block">
-							<div class="team-upper-part">
-								<img src="images/work/work1.jpg" alt="Insurance" class="img-fluid">
-							</div>
-							<div class="team-bottom-part">
-								<h5>Blood Tests</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-auto p-2">
-						<div class="team-block">
-							<div class="team-upper-part">
-								<img src="images/work/work2.webp" alt="Health" class="img-fluid">
-							</div>
-							<div class="team-bottom-part">
-								<h5>X-Rays, Scans, and MRI Tests</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-auto p-2">
-						<div class="team-block">
-							<div class="team-upper-part">
-								<img src="images/work/work3.png" alt="Fitness" class="img-fluid">
-							</div>
-							<div class="team-bottom-part">
-								<h5>Doctor & Diet Consultations</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-auto p-2">
-						<div class="team-block">
-							<div class="team-upper-part">
-								<img src="images/work/work4.jpg" alt="Nutrition" class="img-fluid">
-							</div>
-							<div class="team-bottom-part">
-								<h5>Herbved+ Supplements</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-auto p-2">
-						<div class="team-block">
-							<div class="team-upper-part">
-								<img src="images/work/work5.jpg" alt="Insights" class="img-fluid">
-							</div>
-							<div class="team-bottom-part">
-								<h5>Upload Prescription</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<style>
-			/* Ensure row stays in one line and scrolls if needed */
-			.row.d-flex.flex-nowrap {
-				flex-wrap: nowrap;
-				overflow-x: auto;
-			}
-
-			/* Make all cards the same height */
-			.team-block {
-				width: 230px;
-				/* Adjust as needed */
-				height: 100%;
-				/* Ensures equal height */
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: space-between;
-				border: 1px solid #ddd;
-				padding: 10px;
-				background: #fff;
-				border-radius: 10px;
-			}
-
-			/* Ensure images take equal space */
-			.team-upper-part {
-				flex: 1;
-				/* Makes images stretch equally */
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 100%;
-			}
-
-			.team-upper-part img {
-				max-height: 150px;
-				/* Keep image sizes equal */
-				width: auto;
-				object-fit: cover;
-			}
-
-			/* Make sure text stays at the bottom */
-			.team-bottom-part {
-				height: 50px;
-				/* Ensures consistent height */
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				text-align: center;
-			}
-		</style>
-
-		<div>
-			<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8 col-xl-12">
-							<div class="title-box-center pt-5">
-								<h2 class="title">Health Assurance+Health Insurance.A World First</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="hero-banner container  " style="background-image: url(images/bg/banner1.jpeg); ">
-				<div class="hero-banner container "
-					style="background-color:rgba(255, 3, 213, 0.3); width: 100vw; height: 100%;">
-					<div class="banner-content">
-						<h3 class="banner-title">Protect Your Health</h3>
-						<h3 class="banner-title">with the Right Insurance</h3>
-						<p class="banner-text">Ensure your healthcare expenses are covered with our partnered insurance
-							plans. Get peace of mind and access to quality healthcare without financial worries</p>
-						<div class="btn-box">
-							<a href="#" class="cs-btn-one btn-primary-color">Explore Insurance Plan</a>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</section>
+	<section class="service-content-area bg-silver pdb-110">
+		<div class="section-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-5">
+						<div class="service-style4">
+							<div class="service-item-thumb">
+								<img class="img-full" src="images/services/emr.jpg" alt="">
 
-	<!-- Banner section End -->
+							</div>
+							<div class="service-item-content">
+								<h4 class="service-item-title"><a href="#"> EMR* & Sophisticated Predictive Software.
+									</a></h4>
+
+								<div class="service-item-link">
+									<a href="service_detail.html" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
+										More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-5">
+						<div class="service-style4">
+							<div class="service-item-thumb">
+								<img class="img-full" src="images/services/electrocardiogram.png" alt="">
+
+							</div>
+							<div class="service-item-content">
+								<h4 class="service-item-title"><a href="#">. Lab tests and ECG with home collection.
+									</a></h4>
+
+								<div class="service-item-link">
+									<a href="service_detail.html" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
+										More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-5">
+						<div class="service-style4">
+							<div class="service-item-thumb">
+								<img class="img-full" src="images/services/preventive.jpg" alt="">
+
+							</div>
+							<div class="service-item-content">
+								<h4 class="service-item-title"><a href="#">6P** based Preventive healthcare and Health
+										Assurance</a></h4>
+
+								<div class="service-item-link">
+									<a href="service_detail.html" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
+										More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6">
+						<div class="service-style4">
+							<div class="service-item-thumb">
+								<img class="img-full" src="images/services/Health-insurance-1.webp" alt="">
+
+							</div>
+							<div class="service-item-content">
+								<h4 class="service-item-title"><a href="#">Health Insurance</a></h4>
+
+								<div class="service-item-link">
+									<a href="service_detail.html" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
+										More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6">
+						<div class="service-style4">
+							<div class="service-item-thumb">
+								<img class="img-full" src="images/services/max-bupa-health-insurance.avif" alt="">
+
+							</div>
+							<div class="service-item-content">
+								<h4 class="service-item-title"><a href="#">Health Insurance top-up
+									</a></h4>
+
+								<div class="service-item-link">
+									<a href="service_detail.html" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
+										More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6">
+						<div class="service-style4">
+							<div class="service-item-thumb">
+								<img class="img-full" src="images/services/accidental.jpg" alt="">
+
+							</div>
+							<div class="service-item-content">
+								<h4 class="service-item-title"><a href="#"> Accident Insurance alone, if health
+										insurance not required.</a></h4>
+
+								<div class="service-item-link">
+									<a href="service_detail.html" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
+										More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mrt-25">
+					<div class="col-xl-12 text-center pt-5">
+						<h5>Do You Want To explore more services just <span><a href="service.html"
+									class="text-underline text-primary-color">click here</a></span></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	  <!-- Service Secton End -->
+	<!--Banner2 Section Start -->
+	<div>
+		<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-xl-12">
+						<div class="title-box-center pt-5">
+							<h2 class="title">Health Assurance+Health Insurance. A World First</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hero-banners container"  >
+			<div class="hero-banner container "
+				style="background-color:rgba(255, 3, 213, 0.3); width: 100vw; height: 100%;">
+				<div class="banner-content">
+					<h3 class="banner-title">Protect Your Health</h3>
+					<h3 class="banner-title">with the Right Insurance</h3>
+					<p class="banner-text">Ensure your healthcare expenses are covered with our partnered insurance
+						plans. Get peace of mind and access to quality healthcare without financial worries</p>
+					<div class="btn-box">
+						<a href="#" class="cs-btn-one btn-primary-color">Explore Insurance Plan</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	
+
+
+	<!-- Banner 2 section End -->
 
 
 	<!-- Grid-section start -->
@@ -488,7 +624,8 @@
 								</div>
 								<div class="featured-content">
 									<h4 class="featured-title">Health Insurance Package </h4>
-									<p class="featured-desc">A health insurance package covers medical expenses like doctor visits, hospitalization, and prescriptions.</p>
+									<p class="featured-desc">A health insurance package covers medical expenses like
+										doctor visits, hospitalization, and prescriptions.</p>
 								</div>
 							</div>
 						</div>
@@ -499,7 +636,8 @@
 								</div>
 								<div class="featured-content">
 									<h4 class="featured-title">Group Health Insurance</h4>
-									<p class="featured-desc">Group health insurance provides medical coverage to a group of people, typically employees of a company, under a single policy.</p>
+									<p class="featured-desc">Group health insurance provides medical coverage to a group
+										of people, typically employees of a company, under a single policy.</p>
 								</div>
 							</div>
 						</div>
@@ -516,7 +654,8 @@
 						</div>
 					</div>
 					<div class="d-inline d-md-flex align-items-center mt-40">
-						<a href="about.html" class="cs-btn-one btn-primary-color btn-md btn-block mrr-30 mrb-sm-30">Read More</a>
+						<a href="about.html" class="cs-btn-one btn-primary-color btn-md btn-block mrr-30 mrb-sm-30">Read
+							More</a>
 
 					</div>
 				</div>
@@ -524,110 +663,6 @@
 		</div>
 	</section>
 	<!-- About Section End -->
-	<!-- Service Section Area Start -->
-	<section class="service-content-area bg-silver pdt-110 pdb-110" data-background="images/bg/abs-bg8.png">
-		<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-			<div class="container">
-				<div class="row">
-					<div class="col"></div>
-					<div class="col-lg-8 col-xl-6">
-						<div class="title-box-center">
-							<h5 class="sub-title sub-title-primary-color text-primary-color mrb-20">Services</h5>
-							<h2>We Provide Services</h2>
-						</div>
-					</div>
-					<div class="col"></div>
-				</div>
-			</div>
-		</div>
-		<div class="section-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-3 col-lg-4 col-md-6">
-						<div class="service-style4">
-							<div class="service-item-thumb">
-								<img class="img-full" src="images/service/service1.webp" alt="">
-
-							</div>
-							<div class="service-item-content">
-								<h4 class="service-item-title"><a href="#">Blood Test</a></h4>
-								<p class="service-item-para pb-4">A blood test analyzes a sample of your blood to assess
-									overall health, detect diseases, and monitor organ function. It helps diagnose
-									conditions like diabetes, infections, cholesterol levels.</p>
-								<div class="service-item-link">
-									<a href="#" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
-										More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-4 col-md-6">
-						<div class="service-style4">
-							<div class="service-item-thumb">
-								<img class="img-full" src="images/service/service2.jpg" alt="">
-
-							</div>
-							<div class="service-item-content">
-								<h4 class="service-item-title"><a href="#">Health Insurance</a></h4>
-								<p class="service-item-para">Health insurance covers medical expenses, including doctor
-									visits, hospital stays, medications, and surgeries. It helps reduce out-of-pocket
-									costs and provides financial security during health emergencies.</p>
-								<div class="service-item-link">
-									<a href="#" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
-										More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-4 col-md-6">
-						<div class="service-style4">
-							<div class="service-item-thumb">
-								<img class="img-full" src="images/service/service3.jpg" alt="">
-
-							</div>
-							<div class="service-item-content">
-								<h4 class="service-item-title"><a href="#">Health Assurance</a></h4>
-								<p class="service-item-para">Health assurance focuses on preventive care and wellness,
-									ensuring long-term health rather than just covering medical expenses. It promotes
-									regular checkups, lifestyle management, and early disease detection</p>
-								<div class="service-item-link">
-									<a href="#" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
-										More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-4 col-md-6">
-						<div class="service-style4">
-							<div class="service-item-thumb">
-								<img class="img-full" src="images/service/service4.jpg" alt="">
-								<div class="service-item-icon">
-
-								</div>
-							</div>
-							<div class="service-item-content">
-								<h4 class="service-item-title"><a href="#">Doctor Consultation</a></h4>
-								<p class="service-item-para">A doctor consultation is a medical appointment where a
-									healthcare professional evaluates your health, diagnoses conditions, and provides
-									treatment or advice in online .</p>
-								<div class="service-item-link">
-									<a href="#" class="cs-btn-one btn-primary-color btn-sm btn-block mrr-30">Read
-										More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row mrt-25">
-					<div class="col-xl-12 text-center">
-						<h5>Do You Want To explore more services just <span><a href="#"
-									class="text-underline text-primary-color">click here</a></span></h5>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Service Section Area End -->
 	<!-- Why Choose Us Section Start -->
 	<section class="pdt-110 pdb-110" data-background="images/bg/abs-bg1.png" data-overlay-dark="10">
 		<div class="why-choose-us-section-shape shape-1" data-speed="0.02" data-revert="true">
@@ -762,7 +797,7 @@
 		</div>
 	</section>
 	<!-- Get a Quote Form Section End -->
-	<!-- Funfact Section Start -->
+	<!-- Impact Section Start -->
 
 	<section class="pdt-50 pdb-50 pdb-md-45" data-background="images/bg/banner2.jpg" data-overlay-dark="95">
 		<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
@@ -771,7 +806,7 @@
 					<div class="col"></div>
 					<div class="col-lg-8 col-xl-6">
 						<div class="title-box-center">
-							<h2 class="title m-3 text-white">Hexa Preventia Impacts</h2>
+							<h2 class="title m-3 text-white">HexaPreventia Impacts</h2>
 						</div>
 					</div>
 					<div class="col"></div>
@@ -841,7 +876,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- Funfact Section End -->
+	<!-- Impact Section End -->
 
 	<!-- Testimonials Section Start -->
 	<section class="request-a-call-back pdt-110 pdb-20 bg-pos-center-center" data-background="images/bg/testi-bg1.png">
@@ -981,13 +1016,12 @@
 				</div>
 			</div>
 		</div>
-		<style>
 
-		</style>
-		<div class="section-content">
+
+		<div class="section-content pdb-110">
 			<div class="container">
 				<div class="row align-items-stretch">
-					<div class="col-md-6 col-lg-4 col-xl-4">
+					<div class="col-md-6 col-lg-4 col-xl-4 mb-3">
 						<div class="news-wrapper mrb-30 mrb-sm-40">
 							<div class="news-thumb">
 								<img class="img-full" src="images/news/01.jpg" alt="">
@@ -1010,8 +1044,9 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="col-md-6 col-lg-4 col-xl-4">
-						<div class="news-wrapper mrb-30 mrb-sm-40">
+						<div class="news-wrapper mrb-30 mrb-sm-40 mb-3">
 							<div class="news-thumb">
 								<img class="img-full" src="images/news/02.jpg" alt="">
 								<div class="news-top-meta">
@@ -1033,7 +1068,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4 col-xl-4">
+
+					<div class="col-md-6 col-lg-4 col-xl-4 mb-3">
 						<div class="news-wrapper mrb-30 mrb-sm-40">
 							<div class="news-thumb">
 								<img class="img-full" src="images/news/03.jpg" alt="">
@@ -1050,7 +1086,7 @@
 												class="far fa-calendar-alt mrr-10 text-primary-color"></i>01 Jan,
 											2025</span>
 									</div>
-									<h4 class="the-title"><a href="#">The Role Of Health Insurance </a></h4>
+									<h4 class="the-title"><a href="#">The Role Of Health Insurance</a></h4>
 								</div>
 							</div>
 						</div>
@@ -1058,127 +1094,129 @@
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<!-- Footer Area Start -->
-	<footer class="footer anim-object2">
-		<div class="footer-main-area bg-cover pdb-lg-60" data-background="images/footer-bg.png">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-9 col-lg-12">
-						<div class="row footer-border-bottom mrb-40 mrr-60 mrr-md-0">
-							<div class="col-xl-6 col-lg-6 col-md-6">
-								<div class="widget footer-widget mrr-90 mrr-md-20">
-									<img src="images/logo-footer.png" alt="" class="mrb-25">
-									<p class="text-light-gray mrb-25">Prevention meets Protection Redefining Healthcare
-										& Insurance</p>
-									<ul class="social-list">
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-									</ul>
+
+		<!-- Footer Area Start -->
+		<footer class="footer anim-object2">
+			<div class="footer-main-area bg-cover pdb-lg-60" data-background="images/footer-bg.png">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-9 col-lg-12">
+							<div class="row footer-border-bottom mrb-40 mrr-60 mrr-md-0">
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="widget footer-widget mrr-90 mrr-md-20">
+										<img src="images/logo-footer.png" alt="" class="mrb-25">
+										<p class="text-light-gray mrb-25">Prevention meets Protection Redefining
+											Healthcare
+											& Insurance</p>
+										<ul class="social-list">
+											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+											<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-3">
+									<div class="widget footer-widget">
+										<h5 class="widget-title text-white mrb-30">Services</h5>
+										<ul class="footer-widget-list">
+											<li><a href="#">Health Assurance</a></li>
+											<li><a href="#">Health Insurance</a></li>
+											<li><a href="#">Doctor Consultation</a></li>
+											<li><a href="#">Supplements</a></li>
+											<li><a href="#">Health Test</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-3">
+									<div class="widget footer-widget">
+										<h5 class="widget-title text-white mrb-30">Useful Links</h5>
+										<ul class="footer-widget-list">
+											<li><a href="#">Home</a></li>
+											<li><a href="#">Service</a></li>
+											<li><a href="#">FAQ's</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-3">
-								<div class="widget footer-widget">
-									<h5 class="widget-title text-white mrb-30">Services</h5>
-									<ul class="footer-widget-list">
-										<li><a href="#">Health Assurance</a></li>
-										<li><a href="#">Health Insurance</a></li>
-										<li><a href="#">Doctor Consultation</a></li>
-										<li><a href="#">Supplements</a></li>
-										<li><a href="#">Health Test</a></li>
-									</ul>
+							<div class="row mrb-lg-40">
+								<div class="col-xl-4 col-lg-4 col-md-6">
+									<div class="footer-contact-info mrb-md-30">
+										<div class="contact-info-icon">
+											<i class="webexflaticon flaticon-email-1"></i>
+										</div>
+										<div class="contact-info-text">
+											<h5 class="text-white">Email</h5>
+											<p class="mrb-0"><a class="text-light-gray"
+													href="mailto:suport@hexapreventia.com">support@hexapreventia.com</a>
+											</p>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="col-xl-3 col-lg-3 col-md-3">
-								<div class="widget footer-widget">
-									<h5 class="widget-title text-white mrb-30">Useful Links</h5>
-									<ul class="footer-widget-list">
-										<li><a href="#">Home</a></li>
-										<li><a href="#">Service</a></li>
-										<li><a href="#">FAQ's</a></li>
-										<li><a href="#">Contact</a></li>
-									</ul>
+								<div class="col-xl-4 col-lg-4 col-md-6">
+									<div class="footer-contact-info mrb-md-30">
+										<div class="contact-info-icon">
+											<i class="webexflaticon flaticon-call"></i>
+										</div>
+										<div class="contact-info-text">
+											<h5 class="text-white">Phone</h5>
+											<p class="mrb-0"><a class="text-light-gray" href="tel:5551234567">+91
+													9945815812</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-6">
+									<div class="footer-contact-info">
+										<div class="contact-info-icon">
+											<i class="webexflaticon flaticon-location"></i>
+										</div>
+										<div class="contact-info-text">
+											<h5 class="text-white">Address</h5>
+											<p class="text-light-gray mrb-0"> 123 Health Streat, New Delhi, 220113</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row mrb-lg-40">
-							<div class="col-xl-4 col-lg-4 col-md-6">
-								<div class="footer-contact-info mrb-md-30">
-									<div class="contact-info-icon">
-										<i class="webexflaticon flaticon-email-1"></i>
-									</div>
-									<div class="contact-info-text">
-										<h5 class="text-white">Email</h5>
-										<p class="mrb-0"><a class="text-light-gray"
-												href="mailto:suport@hexapreventia.com">support@hexapreventia.com</a></p>
-									</div>
-								</div>
+						<div class="col-xl-3 col-lg-6 col-md-12">
+							<div class="widget footer-widget">
+								<h5 class="widget-title text-white mrb-30">Newsletter</h5>
+								<p class="text-light-gray">We're here to provide reliable healthcare information and
+									services. Let's build a healthier future together.</p>
+								<input type="text" class="form-control" placeholder="Enter Your Email">
+								<a href="#" class="cs-btn-one btn-primary-color btn-sm has-icon mrt-20"><i
+										class="webexflaticon flaticon-send"></i>Submit Now</a>
 							</div>
-							<div class="col-xl-4 col-lg-4 col-md-6">
-								<div class="footer-contact-info mrb-md-30">
-									<div class="contact-info-icon">
-										<i class="webexflaticon flaticon-call"></i>
-									</div>
-									<div class="contact-info-text">
-										<h5 class="text-white">Phone</h5>
-										<p class="mrb-0"><a class="text-light-gray" href="tel:5551234567">+91
-												9945815812</a></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-6">
-								<div class="footer-contact-info">
-									<div class="contact-info-icon">
-										<i class="webexflaticon flaticon-location"></i>
-									</div>
-									<div class="contact-info-text">
-										<h5 class="text-white">Address</h5>
-										<p class="text-light-gray mrb-0"> 123 Health Streat, New Delhi, 220113</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-6 col-md-12">
-						<div class="widget footer-widget">
-							<h5 class="widget-title text-white mrb-30">Newsletter</h5>
-							<p class="text-light-gray">We're here to provide reliable healthcare information and
-								services. Let's build a healthier future together.</p>
-							<input type="text" class="form-control" placeholder="Enter Your Email">
-							<a href="#" class="cs-btn-one btn-primary-color btn-sm has-icon mrt-20"><i
-									class="webexflaticon flaticon-send"></i>Submit Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottom-area">
-			<div class="container pdt-30 pdb-30">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="text-center">
-							<span class="text-light-gray">Copyright by <a class="text-primary-color2" target="_blank"
-									href="#"> HEXA PREVENTIA</a> © 2025. All rights reserved </span>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="footer-bottom-area">
+				<div class="container pdt-30 pdb-30">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="text-center">
+								<span class="text-light-gray">Copyright by <a class="text-primary-color2"
+										target="_blank" href="#"> HEXA PREVENTIA</a> © 2025. All rights reserved </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer Area End -->
+		<!-- BACK TO TOP SECTION -->
+		<div class="back-to-top bg-primary-color">
+			<i class="fab fa-angle-up"></i>
 		</div>
-	</footer>
-	<!-- Footer Area End -->
-	<!-- BACK TO TOP SECTION -->
-	<div class="back-to-top bg-primary-color">
-		<i class="fab fa-angle-up"></i>
-	</div>
-	<!-- Integrated important scripts here -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="js/jquery.v1.12.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery-core-plugins.js"></script>
-	<script src="js/main.js"></script>
+		<!-- Integrated important scripts here -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/jquery.v1.12.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-core-plugins.js"></script>
+		<script src="js/main.js"></script>
 </body>
 
 
